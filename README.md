@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# 💰 SpendWise — Personal Finance Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SpendWise is a modern **personal finance tracking dashboard** that helps users monitor income, expenses, and financial trends through interactive visualizations and analytics.
 
-## Available Scripts
+Built using **React** and **Recharts**, the application provides clear insights into spending habits with a clean dark-themed interface.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+SpendWise allows users to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Track income and expenses
+- Analyze financial patterns
+- View spending analytics
+- Monitor savings performance
+- Manage transactions efficiently
 
-### `npm test`
+The project focuses on **data visualization**, **user experience**, and **financial awareness**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📊 Dashboard (Overview)
+- Net balance summary
+- Total income & expenses
+- Transaction count
+- Cashflow visualization
+- Top spending categories
+- Recent activity tracking
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 💳 Transactions Management
+- View all transactions
+- Search by title, merchant, or tag
+- Filter by category and flow type
+- Sort by date or amount
+- Export transactions as CSV
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📈 Analytics
+- Monthly grouped bar charts
+- Cashflow trend analysis
+- Spending by category
+- Category-wise financial breakdown
 
-### `npm run eject`
+### 🧠 Insights
+- Savings rate calculation
+- Top expense category detection
+- Month-on-month spending comparison
+- Subscription tracking
+- Monthly surplus/deficit summary
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 👥 Role-Based Access
+- **Viewer**
+  - Read-only access
+  - Filtering & exporting allowed
+- **Admin**
+  - Add transactions
+  - Edit entries
+  - Delete entries
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+(Role switching is frontend-based and instant.)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend:** React 18
+- **State Management:** React Context API
+- **Charts & Visualization:** Recharts
+- **Icons:** Lucide React
+- **Styling:** CSS (Custom Properties / Dark Theme)
+- **Data Storage:** LocalStorage (browser persistence)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
+src/
+│
+├── components/ # UI components
+│ ├── Sidebar
+│ ├── Topbar
+│ ├── StatCards
+│ ├── Charts
+│ ├── TxCard
+│ └── EntryModal
+│
+├── pages/ # Application pages
+│ ├── Overview
+│ ├── Transactions
+│ ├── Analytics
+│ └── Insights
+│
+├── context/ # Global state management
+│ └── AppContext.jsx
+│
+├── data/ # Mock data & categories
+│ └── mockData.js
+│
+├── utils/ # Helper functions
+│ └── utils.js
+│
+└── App.jsx
 
-### Code Splitting
+## ⚙️ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/spendwise.git
+2️⃣ Navigate to Project Folder
+cd spendwise
+3️⃣ Install Dependencies
+npm install
+4️⃣ Run the Application
+npm start
